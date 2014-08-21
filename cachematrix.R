@@ -11,7 +11,7 @@
 ## the capability of storing its inverse in order to
 ## avoid re-computation
 makeCacheMatrix <- function(x = matrix()) {
-
+    # Return a list of caching functions for a matrix 'x'
     inv <- NULL
     set <- function(y) {
         x <<- y
